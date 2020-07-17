@@ -1,0 +1,46 @@
+SELECT * FROM Nurse hospital
+SELECT count(*) FROM Nurse hospital
+
+SELECT City FROM AIRPORTS flight_2
+SELECT count(*) FROM AIRPORTS WHERE City = "Athens" flight_2
+
+SELECT max(Salary), min(Salary) FROM Employee hospital
+SELECT avg(Salary) FROM Employee WHERE SID IN ( SELECT SID FROM Doctor ) hospital
+SELECT Salary, count(*) FROM Employee GROUP BY Salary hospital
+
+SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1 hospital
+
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+
+SELECT count(*) FROM Room hospital
+
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital
+
+SELECT * FROM Nurse hospital

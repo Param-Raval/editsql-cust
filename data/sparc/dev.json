@@ -1,0 +1,2312 @@
+[
+    {
+        "database_id": "hospital", 
+        "interaction": [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Who", 
+                    "are", 
+                    "all", 
+                    "the", 
+                    "nurses", 
+                    "?"
+                ], 
+                "utterance": "Who are all the nurses?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }, 
+            {
+                "query": "SELECT count(*) FROM Nurse", 
+                "utterance_toks": [
+                    "How", 
+                    "many", 
+                    "are", 
+                    "there", 
+                    "?"
+                ], 
+                "utterance": "How many are there?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                3, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ], 
+        "final": {
+            "query": "SELECT count(*) FROM Nurse", 
+            "utterance": "What is the total number of nurses?"
+        }
+    },
+    {
+        "database_id": "flight_2", 
+        "interaction": [
+            {
+                "query": "SELECT City FROM AIRPORTS", 
+                "utterance_toks": [
+                    "Where", 
+                    "are", 
+                    "all", 
+                    "the", 
+                    "airports", 
+                    "?"
+                ], 
+                "utterance": "Where are all the airports?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                1
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }, 
+            {
+                "query": "SELECT count(*) FROM AIRPORTS WHERE City  =  \"Athens\"", 
+                "utterance_toks": [
+                    "Of", 
+                    "these", 
+                    ",", 
+                    "how", 
+                    "many", 
+                    "are", 
+                    "from", 
+                    "Athens",
+                    "?"
+                ], 
+                "utterance": "Of these, how many are from Athens?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                1
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [
+                        [
+                            false, 
+                            2, 
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    0, 
+                                    false
+                                ], 
+                                null
+                            ], 
+                            "\"Athens\"", 
+                            null
+                        ]
+                    ], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ], 
+        "final": {
+            "query": "SELECT count(*) FROM AIRPORTS WHERE City  =  \"Athens\"", 
+            "utterance": "Of these, how many are from Athens?"
+        }
+    },
+    {
+        "database_id": "hospital", 
+        "interaction": [ 
+            {
+                "query": "SELECT max(Salary), min(Salary) FROM Employee", 
+                "utterance_toks": [
+                    "What", 
+                    "is", 
+                    "the", 
+                    "maximum", 
+                    "and", 
+                    "minimum", 
+                    "salary", 
+                    "?"
+                ], 
+                "utterance": "What is the maximum and minimum salary in the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                2
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "having": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "groupBy": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                1, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        12, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ], 
+                            [
+                                2, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        12, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }, 
+            {
+                "query": "SELECT avg(Salary) FROM Employee WHERE SID IN ( SELECT SID FROM Doctor )", 
+                "utterance_toks": [
+                    "What", 
+                    "about", 
+                    "the", 
+                    "average", 
+                    "salary", 
+                    "of", 
+                    "doctors", 
+                    "?"
+                ], 
+                "utterance": "What about the average salary of doctors?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                2
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "having": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [
+                        [
+                            false, 
+                            8, 
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    12, 
+                                    false
+                                ], 
+                                null
+                            ], 
+                            {
+                                "orderBy": [], 
+                                "from": {
+                                    "table_units": [
+                                        [
+                                            "table_unit", 
+                                            7
+                                        ]
+                                    ], 
+                                    "conds": []
+                                }, 
+                                "union": null, 
+                                "except": null, 
+                                "having": [], 
+                                "limit": null, 
+                                "intersect": null, 
+                                "where": [], 
+                                "groupBy": [], 
+                                "select": [
+                                    false, 
+                                    [
+                                        [
+                                            0, 
+                                            [
+                                                0, 
+                                                [
+                                                    0, 
+                                                    37, 
+                                                    false
+                                                ], 
+                                                null
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            }, 
+                            null
+                        ]
+                    ], 
+                    "groupBy": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                5, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        12, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT Salary, count(*) FROM Employee GROUP BY Salary",
+                "utterance_toks": [
+                    "How",
+                    "many",
+                    "employees",
+                    "for",
+                    "each",
+                    "salary",  
+                    "?"
+                ],
+                "utterance": "How many employees for each salary?",
+                "sql": {
+                    "orderBy": [],
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit",
+                                2
+                            ]
+                        ],
+                        "conds": []
+                    },
+                    "union": null,
+                    "except": null,
+                    "having": [],
+                    "limit": null,
+                    "intersect": null,
+                    "where": [],
+                    "groupBy": [
+                        [
+                            0,
+                            12,
+                            false
+                        ]
+                    ],
+                    "select": [
+                        false,
+                        [
+                            [
+                                0,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        12,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ],
+                            [
+                                3,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        0,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ], 
+        "final": {
+            "query": "SELECT avg(Salary) FROM Employee WHERE SID IN ( SELECT SID FROM Doctor )", 
+            "utterance": "What is the average salary of the doctors?"
+        }
+    },
+    {
+    	"database_id":"hospital",
+    	"interaction":[
+    		{
+                "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1",
+                "utterance_toks": [
+                    "Which",
+                    "patient",
+                    "spent",
+                    "most",
+                    "on",
+                    "medicines",
+                    "?"
+                ],
+                "utterance": "Which patient spent most on medicines?",
+                "sql": {
+                    "orderBy": [
+                        "desc",
+                        [
+                            [
+                                0,
+                                [
+                                    3,
+                                    0,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ],
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit",
+                                4
+                            ]
+                        ],
+                        "conds": []
+                    },
+                    "union": null,
+                    "except": null,
+                    "having": [],
+                    "limit": 1,
+                    "intersect": null,
+                    "where": [],
+                    "groupBy": [
+                        [
+                            0,
+                            24,
+                            false
+                        ]
+                    ],
+                    "select": [
+                        false,
+                        [
+                            [
+                                0,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        24,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ],
+                            [
+                                3,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        0,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+    	],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "Which patient spent the most on medicines?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":[
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Which", 
+                    "employee", 
+                    "in", 
+                    "the", 
+                    "hospital", 
+                    "gets",
+                    "paid",
+                    "the",
+                    "most"
+                    "?"
+                ], 
+                "utterance": "Which employee in the hospital gets paid the most?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Which", 
+                    "employee", 
+                    "in", 
+                    "the", 
+                    "hospital", 
+                    "gets",
+                    "paid",
+                    "the",
+                    "least"
+                    "?"
+                ], 
+                "utterance": "Which employee in the hospital gets paid the least?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Show", 
+                    "employee", 
+                    "in", 
+                    "the", 
+                    "hospital", 
+                    "gets",
+                    "paid",
+                    "the",
+                    "most",
+                    "and",
+                    "who",
+                    "gets",
+                    "paid",
+                    "the",
+                    "least",
+                    "?"
+                ], 
+                "utterance": "Show employee in the hospital gets paid the most and who gets paid the least?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "Show employee in the hospital gets paid the most and who gets paid the least?"
+        }
+    },
+    {
+    	"database_id":"hospital",
+    	"interaction":[
+    		{
+                "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1",
+                "utterance_toks": [
+                    "How",
+                    "many",
+                    "rooms",
+                    "are",
+                    "occupied",
+                    "?"
+                ],
+                "utterance": "How many rooms are occupied?",
+                "sql": {
+                    "orderBy": [
+                        "desc",
+                        [
+                            [
+                                0,
+                                [
+                                    3,
+                                    0,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ],
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit",
+                                4
+                            ]
+                        ],
+                        "conds": []
+                    },
+                    "union": null,
+                    "except": null,
+                    "having": [],
+                    "limit": 1,
+                    "intersect": null,
+                    "where": [],
+                    "groupBy": [
+                        [
+                            0,
+                            24,
+                            false
+                        ]
+                    ],
+                    "select": [
+                        false,
+                        [
+                            [
+                                0,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        24,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ],
+                            [
+                                3,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        0,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+    	],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "How many rooms are occupied?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":[
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Who", 
+                    "are", 
+                    "all", 
+                    "the", 
+                    "patients", 
+                    "with",
+                    "age",
+                    "between",
+                    "18",
+                    "to",
+                    "45",
+                    "?"
+                ], 
+                "utterance": "Who are all the patients with age between 18 to 45?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What", 
+                    "is", 
+                    "the", 
+                    "total", 
+                    "number",
+                    "of",
+                    "such",
+                    "patients", 
+                    "?"
+                ], 
+                "utterance": "What is the total number of such patients?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "Who are all the patients with age between 18 to 45?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":[
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Which", 
+                    "patient", 
+                    "has", 
+                    "the", 
+                    "maximum",
+                    "number",
+                    "of",
+                    "visitors", 
+                    "?"
+                ], 
+                "utterance": "Which patient has the maximum number of visitors?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Doctors", 
+                    "having", 
+                    "speciality", 
+                    "in", 
+                    "neurology", 
+                    "?"
+                ], 
+                "utterance": "Doctors having speciality in neurology?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What", 
+                    "is", 
+                    "the", 
+                    "average", 
+                    "duration",
+                    "of",
+                    "a",
+                    "patient's",
+                    "admittance", 
+                    "?"
+                ], 
+                "utterance": "What is the average duration of a patient's admittance?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "What is the average duration of a patient's admittance?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            ,
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Which", 
+                    "floor", 
+                    "has", 
+                    "the", 
+                    "maximum",
+                    "patients",
+                    "who",
+                    "show",
+                    "symptoms",
+                    "of",
+                    "mental",
+                    "illness", 
+                    "?"
+                ], 
+                "utterance": "Which floor has maximum patients who show symptoms of mental illness?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "How", 
+                    "many", 
+                    "patients", 
+                    "have", 
+                    "the",
+                    "symptom",
+                    "of",
+                    "cold",
+                    "?"
+                ], 
+                "utterance": "How many patients have the symptom of cold?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "How", 
+                    "many", 
+                    "nurses", 
+                    "are", 
+                    "there",
+                    "in",
+                    "all",
+                    "types",
+                    "?"
+                ], 
+                "utterance": "How many nurses are there in all types?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What", 
+                    "are", 
+                    "the", 
+                    "past", 
+                    "illnesses",
+                    "for",
+                    "every",
+                    "person", 
+                    "?"
+                ], 
+                "utterance": "What are the past illnesses for every person?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Which", 
+                    "room", 
+                    "accomodates", 
+                    "the",
+                    "patient",
+                    "who",
+                    "has",
+                    "the",
+                    "maximum",
+                    "spending",
+                    "on",
+                    "medication", 
+                    "?"
+                ], 
+                "utterance": "Which room accomodates the patient who has the maximum spending on medication?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What", 
+                    "are", 
+                    "the", 
+                    "symptoms", 
+                    "of",
+                    "the",
+                    "patient",
+                    "with",
+                    "maximum",
+                    "medicine",
+                    "cost", 
+                    "?"
+                ], 
+                "utterance": "What are the symptoms of the patient with maximum medicine cost?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription GROUP BY PID Order BY count(*) DESC LIMIT 1", 
+            "utterance": "What are the symptoms of the patient with maximum medicine cost?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+               "utterance_toks": [
+                    "What", 
+                    "are", 
+                    "the", 
+                    "previous", 
+                    "illnesses",
+                    "for",
+                    "every",
+                    "person",
+                    "who",
+                    "is",
+                    "not",
+                    "discharged", 
+                    "?"
+                ], 
+                "utterance": "What are the previous illnesses for every person who is not discharged?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "What are the previous illnesses for every person who is not discharged?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+               "utterance_toks": [
+                    "How",
+                    "many",
+                    "doctors",
+                    "have",
+                    "speciality",
+                    "in",
+                    "neurology",
+                    "?"
+                ], 
+                "utterance": "How many doctors have speciality in neurology?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "How many doctors have speciality in neurology?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "How",
+                    "many",
+                    "employees",
+                    "in",
+                    "the",
+                    "hospital",
+                    "are",
+                    "male",
+                    "and",
+                    "older",
+                    "than",
+                    "65",
+                    "?"
+                ], 
+                "utterance": "How many employees in the hospital are male and older than 65?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "How many employees in the hospital are male and older than 65?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Show",
+                    "the",
+                    "most",
+                    "occuring",
+                    "reasons",
+                    "visitors",
+                    "give",
+                    "for",
+                    "visiting",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "Show the most common reasons visitors give for visiting the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "Show the most common reasons visitors give for visiting the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What",
+                    "is",
+                    "the",
+                    "total",
+                    "price",
+                    "multiplied",
+                    "by",
+                    "quantity",
+                    "of",
+                    "the",
+                    "medicines",
+                    "at",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "What is the total price multiplied by quantity of the medicines at the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "What is the total price multiplied by quantity of the medicines at the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Fetch",
+                    "all",
+                    "the",
+                    "records",
+                    "of",
+                    "patients",
+                    "having",
+                    "dengue",
+                    "from",
+                    "all",
+                    "the",
+                    "tables"
+                ], 
+                "utterance": "Fetch all the records of patients with dengue from all the tables", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "Fetch all the records of patients with dengue from all the tables"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Fetch",
+                    "all",
+                    "the",
+                    "records",
+                    "of",
+                    "patients",
+                    "having",
+                    "dengue",
+                    "from",
+                    "all",
+                    "the",
+                    "tables"
+                ], 
+                "utterance": "Fetch all the records of patients with dengue from all the tables", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "Fetch all the records of patients with dengue from all the tables"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "How",            
+                    "many",
+                    "different",
+                    "floors",
+                    "are",
+                    "there",
+                    "in",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "How many different floors are there in the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "How many different floors are there in the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What",
+                    "are",
+                    "the",
+                    "five",
+                    "most",
+                    "common",
+                    "illnesses",
+                    "in",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "What are the five most common illnesses in the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "What are the five most common illnesses in the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What",
+                    "are",
+                    "the",
+                    "different",
+                    "types",
+                    "of",
+                    "nurses",
+                    "and",
+                    "doctors",
+                    "in",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "What are the different types of nurses and doctors in the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "What are the different types of nurses and doctors in the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "What",
+                    "are",
+                    "the",
+                    "most",
+                    "common",
+                    "types",
+                    "of",
+                    "medicines?",
+                    "?"
+                ], 
+                "utterance": "What are the most common types of medicines?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "What are the most common types of medicines?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "Show",
+                    "all",
+                    "available",
+                    "information",
+                    "of",
+                    "doctors",
+                    "and",
+                    "receptionists",
+                    "at",
+                    "the",
+                    "hospital",
+                    "?"
+                ], 
+                "utterance": "Show all available information of doctors and receptionists at the hospital?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "Show all available information of doctors and receptionists at the hospital?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "All",
+                    "the",
+                    "visitors",
+                    "visited",
+                    "which",
+                    "all",
+                    "patients",
+                    "during",
+                    "their",
+                    "visit",
+                    "?"
+                ], 
+                "utterance": "All the visitors visited which all patients during their visit?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "All the visitors visited which all patients during their visit?"
+        }
+    },
+    {
+        "database_id":"hospital",
+        "interaction":
+        [
+            {
+                "query": "SELECT * FROM Nurse", 
+                "utterance_toks": [
+                    "How",
+                    "many",
+                    "employees",
+                    "use",
+                    "gmail",
+                    "as",
+                    "their",
+                    "email",
+                    "?"
+                ], 
+                "utterance": "How many employees use gmail as their email?", 
+                "sql": {
+                    "orderBy": [], 
+                    "from": {
+                        "table_units": [
+                            [
+                                "table_unit", 
+                                8
+                            ]
+                        ], 
+                        "conds": []
+                    }, 
+                    "union": null, 
+                    "except": null, 
+                    "groupBy": [], 
+                    "limit": null, 
+                    "intersect": null, 
+                    "where": [], 
+                    "having": [], 
+                    "select": [
+                        false, 
+                        [
+                            [
+                                0, 
+                                [
+                                    0, 
+                                    [
+                                        0, 
+                                        0, 
+                                        false
+                                    ], 
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "final": {
+            "query": "SELECT PID, count(*) FROM Prescription",
+            "utterance": "How many employees use gmail as their email?"
+        }
+    }
+
+
+
+
+]
