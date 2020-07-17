@@ -35,4 +35,4 @@ After adding new questions, delete the following folders if they exist:
   - data/sparc_data_removefrom
 These folders contain vocabulary files which need to be recreated if you have edited the dev files or added a new schema
 
-Run `output.py` to get a formatted results file.
+Run `output.py` to get a text file named `output.txt` with formatted results.
