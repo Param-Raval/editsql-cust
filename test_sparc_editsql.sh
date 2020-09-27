@@ -10,7 +10,7 @@
 GLOVE_PATH="/home/lily/rz268/dialog2sql/word_emb/glove.840B.300d.txt" # you need to change this
 LOGDIR="logs/logs_sparc_editsql"
 
-CUDA_VISIBLE_DEVICES=5 python3 run.py --raw_train_filename="data/sparc_data_removefrom/train.pkl" \
+CUDA_VISIBLE_DEVICES=5 python3 run.py --raw_train_filename="data/sparc_data_removefrom/train.pkl" \ #Change the CUDA_VISIBLE_DEVICES according to your GPU
           --raw_validation_filename="data/sparc_data_removefrom/dev.pkl" \
           --database_schema_filename="data/sparc_data_removefrom/tables.json" \
           --embedding_filename=$GLOVE_PATH \
